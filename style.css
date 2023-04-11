@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+main{
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+
+nav{
+    width: 200px;
+    background-color: blueviolet;
+}
+
+#container{
+    width: calc(100% - 200px);
+    background-color: blue;
+    overflow-y: scroll;
+}
+
+.header-container{
+     width: calc(100% - 200px) ;
+    height: 80px;
+    background-color: rgba(130, 88, 88, 0.598);
+    position: fixed;
+    top: 0;
+}
+
+.ciao{
+    width: 40px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 80px;
+}
+
+
+footer{
+    height: 100px;
+    background-color: #000 ;
+}
