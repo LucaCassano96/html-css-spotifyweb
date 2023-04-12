@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 
 
 main{
@@ -154,6 +159,7 @@ a:hover{
     justify-content: end;
     align-items: center;
     top: 0;
+    z-index: 10;
 }
 
 .header-container a{
@@ -192,13 +198,72 @@ a:hover{
 
 
 
+   /* albums */
 
-.ciao{
-    width: 40px;
-    height: 500px;
-    border: 1px solid #000;
-    margin-top: 80px;
-}
+   .albums h2{
+    color: #fff;
+    padding: 30px 0 5px 10px;
+   }
+
+   .albums h4{
+    color: #c0bfbf;
+    padding: 5px 0 10px 10px;
+   }
+
+    .albums-row{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .album{
+        margin: 15px 15px 15px 0;
+        width: 200px;
+        text-align: center;
+        position: relative;
+    }
+
+    .album img{
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    .album .opacity-hover{
+        width: 200px;
+        height: 200px;
+        background-color: #000;
+        position: absolute;
+        top: 0;
+        opacity: 0%;
+    }
+
+   .fa-circle-play{
+        position: absolute;
+        font-size: 50px;
+        color: #fff;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .opacity-hover:hover{
+        opacity: 40%;
+    }
+
+    .album h5{
+        color: #fff;
+        padding: 5px 0;
+    }
+
+    .album h6{
+        color: #c0bfbf;
+    }
+
+
+
 
 
 footer{
@@ -223,14 +288,35 @@ footer{
  padding: 8px;
 }   
 
+  /* album */
 
+.album{
+    margin: 15px 5px 15px 0;
+    width: 130px;
+}
+
+.album img, .album .opacity-hover{
+    width: 130px;
+    height: 130px;
+}
 
 }
 
 
+/* phone s */
+
+@media screen and (max-width:540px){
 
 
+    /* album */
 
+
+.albums-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+}
 
 
 
@@ -298,7 +384,17 @@ footer{
     }
 
    
-    
+    /* album */
 
+    .album{
+        margin: 15px 5px 15px 0;
+        width: 180px;
+    }
+    
+    .album img, .album .opacity-hover{
+        width: 180px;
+        height: 180px;
+    }
+    
 
 }
