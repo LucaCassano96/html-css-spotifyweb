@@ -7,7 +7,7 @@
 
 
 main{
-    height: calc(100vh - 80px);
+    max-height: calc(100vh - 80px);
     display: flex;
 }
 
@@ -15,8 +15,8 @@ main{
 nav{
     width: 200px;
     background-color: #000;
+    overflow-y: auto;
 }
-
 
 
 nav img{
@@ -27,13 +27,13 @@ nav img{
      /* research */
 
 
-nav a{
+ a{
   display: inline-block;
   color: #c0bfbf;
   text-decoration: none;
 }
-    
-nav a:hover{
+
+a:hover{
    color: #fff;
 }
 
@@ -88,7 +88,8 @@ nav a:hover{
 
 
 .name-playlists{
-    height: 250px;
+    max-height: 250px;
+    margin-bottom: 100px;
 }
 
 .name-playlists a{
@@ -100,7 +101,7 @@ nav a:hover{
 /* profile */
 
 .profile{
-    margin: 50px 20px;
+    margin-left: 20px;
     font-size: 12px;
 }
 
@@ -128,26 +129,69 @@ nav a:hover{
     font-weight: 900;
 }
 
+.icons-smartphone{
+    display: none;
+}
 
 
-
-
-
+/* main-container-music */
 
 
 #container{
     width: calc(100% - 200px);
-    background-color: blue;
+    background-color: rgb(39, 36, 53);
     overflow-y: scroll;
 }
+
+ /* header container-music */
 
 .header-container{
      width: calc(100% - 200px) ;
     height: 80px;
-    background-color: rgba(130, 88, 88, 0.598);
+    background-color: rgba(33, 32, 39, 0.607);
     position: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: center;
     top: 0;
 }
+
+.header-container a{
+    font-size: 14px;
+    margin-right: 40px;
+    color: #fff;
+    padding: 9px 25px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    letter-spacing: 2px;
+}
+
+.header-container a:hover{
+    font-size: 16px;
+    margin-right: 30px;
+}
+
+
+/* container-music  */
+
+
+.menu{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.menu a{
+    padding: 10px;
+}
+
+.menu a span:first-child{
+    border-bottom: 2px solid rgb(200, 255, 0);
+    padding-bottom: 4px;
+}
+
+
+
 
 .ciao{
     width: 40px;
@@ -161,4 +205,100 @@ footer{
     
     height: 80px;
     background-color: #424242 ;
+}
+
+
+
+
+
+/* tablet md*/
+
+@media screen and (max-width:780px){
+
+
+    /* container-music  */
+ 
+.menu a{
+ font-size: 10px;
+ padding: 8px;
+}   
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* phone xs */
+
+@media screen and (max-width: 480px){
+   
+    /* container  */
+
+    #container, .header-container{
+        width: calc(100% - 40px);
+    }
+    
+     /* nav */
+
+    nav{
+        width: 40px;
+    }
+
+    .nav-container{
+        display: none;
+    }
+
+    .icons-smartphone{
+        width: 30px;
+        height: 100%;
+        margin: 0 auto;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: #c0bfbf;
+        
+    }
+
+    .upper-icons, .lower-icons {
+        padding: 5px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .upper-icons i, .lower-icons i{
+        padding: 5px 0;
+    }
+
+    .upper-icons .fa-spotify{
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .lower-icons .fa-circle-down{
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+
+    .lower-icons .fa-user{
+        font-size: 12px;
+    padding: 5px;
+    background-color: #c0bfbf;
+    border-radius: 50%;
+    color: #fff;
+    }
+
+   
+    
+
+
 }
