@@ -262,6 +262,10 @@ a:hover{
         color: #c0bfbf;
     }
 
+    .circle, .circle img{
+        border-radius: 50%;
+    }
+
 
 
 
