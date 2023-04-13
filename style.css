@@ -239,7 +239,7 @@ a:hover, a i:hover {
         opacity: 0%;
     }
 
-   .fa-circle-play{
+    .opacity-hover .fa-circle-play{
         position: absolute;
         font-size: 50px;
         color: #fff;
@@ -284,6 +284,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 80px;
 }
 
 
@@ -297,6 +298,8 @@ footer{
     padding-left: 15px;
     color: #c0bfbf;
 }
+
+/* left controls */
 
 .listening, .listening img{
     width: 40px;
@@ -313,7 +316,72 @@ padding-left: 10px;
     font-size: 12px;
 }
 
+.controls a div:hover{
+    text-decoration: underline;
+    color: #fff;
+}
 
+
+
+/* center controls */
+
+.player{
+    display: flex;
+    justify-content: center;
+    height: 35px;
+}
+
+.player i{
+    padding: 8px 15px;
+}
+
+.change-volume{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.player .fa-circle-play{
+   color: #fff;
+   font-size: 30px;
+}
+
+.player .fa-circle-play:hover{
+    font-size: 40px;
+}
+
+.player div{
+    color: #fff;
+    font-size: 12px;
+}
+
+.little-progression{
+    width: 70px;
+    height: 3px;
+    background-color: #434343;
+}
+
+.volume-center{
+    width: 15px;
+    height: 3px;
+    background-color: #434343;
+}
+
+.volume-center:hover{
+    border-radius: 50%;
+    height: 15px;
+    background-color: #fff;
+}
+
+.big-progression{
+    width: 350px;
+    height: 3px;
+    background-color:#c0bfbf;
+}
+
+
+
+/* right controls */
 
 .control .volume{
     display: flex;
