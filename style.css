@@ -383,7 +383,7 @@ padding-left: 10px;
 
 /* right controls */
 
-.control .volume{
+.volume{
     display: flex;
     align-items: center;
 }
@@ -413,6 +413,42 @@ padding-left: 10px;
 
 
 
+/* big tablet */
+
+@media screen and (max-width:1050px){
+
+    /* footer */
+
+
+.control{
+    padding-right: 5px;
+}
+
+.control i{
+    padding-left: 5px;
+}
+
+.player i{
+    padding: 4px 6px;
+}
+
+.change-volume{
+    padding: 0 10px;
+}
+
+.big-progression{
+    width: 200px;
+}
+
+.icons{
+    display: block;
+}
+
+
+}
+
+
+
 /* tablet md*/
 
 @media screen and (max-width:780px){
@@ -437,12 +473,76 @@ padding-left: 10px;
     height: 130px;
 }
 
+/* footer */
+
+footer i{
+    font-size: 12px;
+}
+
+a h5{
+    font-size: 12px;
+}
+
+
+.listening, .listening img{
+    width: 30px;
+    height: 30px;
+}
+
+.controls a div{
+    font-size: 7px;
+}
+
+/* center controls */
+
+.player .fa-circle-play{
+   font-size: 25px;
+}
+
+.player .fa-circle-play:hover{
+    font-size: 30px;
+}
+
+.player div{
+    font-size: 10px;
+}
+
+.little-progression{
+    width: 40px;
+}
+
+.volume-center{
+    width: 15px;
+}
+
+.big-progression{
+    width: 150px;
+}
+
+
+
+/* right controls */
+
+.control .volume a:nth-child(1), .control .volume a:nth-child(2){
+    width: 10px;
+}
+
+.control .volume a:nth-child(2){
+    width: 8px;
+}
+
+.control .volume a:nth-child(3){
+    width: 40px;
+}
+
+
+
 }
 
 
 /* phone s */
 
-@media screen and (max-width:540px){
+@media screen and (max-width:570px){
 
 
     /* album */
@@ -451,6 +551,68 @@ padding-left: 10px;
 .albums-row{
     display: flex;
     justify-content: space-evenly;
+}
+
+
+/* footer */
+
+footer i{
+    font-size: 12px;
+}
+
+a h5{
+    font-size: 10px;
+}
+
+.listening, .listening img{
+    width: 20px;
+    height: 20px;
+}
+
+.controls a div{
+    font-size: 7px;
+}
+
+/* center controls */
+
+.player .fa-circle-play{
+   font-size: 15px;
+}
+
+.player .fa-circle-play:hover{
+    font-size: 30px;
+}
+
+.player div{
+    font-size: 8px;
+}
+
+.little-progression{
+    width: 20px;
+}
+
+.volume-center{
+    width: 15px;
+}
+
+.big-progression{
+    width: 100px;
+}
+
+
+
+/* right controls */
+
+.control .volume a:nth-child(1), .control .volume a:nth-child(2){
+    width: 8px;
+}
+
+.control .volume a:nth-child(2){
+    width: 5px;
+}
+
+.control .volume a:nth-child(3){
+    width: 20px;
 }
 
 }
@@ -531,6 +693,24 @@ padding-left: 10px;
     .album img, .album .opacity-hover{
         width: 180px;
         height: 180px;
+    }
+
+    /* footer */
+
+    .control{
+        padding-right: 1px;
+    }
+    
+    .control i{
+        padding-left: 1px;
+    }
+    
+    .player i{
+        padding: 2px 1px;
+    }
+    
+    .change-volume{
+        padding: 0 5px;
     }
     
 
