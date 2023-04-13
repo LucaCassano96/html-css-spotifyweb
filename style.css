@@ -38,7 +38,7 @@ nav img{
   text-decoration: none;
 }
 
-a:hover{
+a:hover, a i:hover {
    color: #fff;
 }
 
@@ -273,10 +273,75 @@ a:hover{
 footer{
     
     height: 80px;
-    background-color: #424242 ;
+    background-color: #1c1c1c ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
+.control{
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.control i{
+    padding-left: 15px;
+    color: #c0bfbf;
+}
+
+.listening, .listening img{
+    width: 40px;
+    height: 40px;
+}
+
+.controls a {
+color: #fff;
+padding-left: 10px;
+}
+
+.controls a div{
+    color:#c0bfbf;
+    font-size: 12px;
+}
+
+
+
+.control .volume{
+    display: flex;
+    align-items: center;
+}
+
+.control .volume a:nth-child(1), .control .volume a:nth-child(2){
+    width: 25px;
+    height: 3px;
+    background-color: #434343;
+}
+
+.control .volume a:nth-child(2){
+    width: 15px;
+    background-color: #434343;
+}
+
+.control .volume a:nth-child(3){
+    width: 70px;
+    height: 3px;
+    background-color: #c0bfbf;
+}
+
+.control .volume a:nth-child(2):hover{
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+}
 
 
 
